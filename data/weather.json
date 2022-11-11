@@ -1,0 +1,97 @@
+{
+  "data": [
+    {
+      "id": 3388232,
+      "wikiDataId": "Q11176490",
+      "type": "CITY",
+      "city": "Lebak Siliwangi",
+      "name": "Lebak Siliwangi",
+      "country": "Indonesia",
+      "countryCode": "ID",
+      "region": "West Java",
+      "regionCode": "JB",
+      "latitude": -6.890555555,
+      "longitude": 107.609444444,
+      "population": 0,
+      "distance": 0.13
+    },
+    {
+      "id": 3305453,
+      "wikiDataId": "Q25171048",
+      "type": "CITY",
+      "city": "Lebakgede",
+      "name": "Lebakgede",
+      "country": "Indonesia",
+      "countryCode": "ID",
+      "region": "West Java",
+      "regionCode": "JB",
+      "latitude": -6.891944444,
+      "longitude": 107.615833333,
+      "population": 0,
+      "distance": 0.38
+    },
+    {
+      "id": 3229333,
+      "wikiDataId": "Q25171050",
+      "type": "CITY",
+      "city": "Cipaganti",
+      "name": "Cipaganti",
+      "country": "Indonesia",
+      "countryCode": "ID",
+      "region": "West Java",
+      "regionCode": "JB",
+      "latitude": -6.890277777,
+      "longitude": 107.604166666,
+      "population": 0,
+      "distance": 0.45
+    },
+    {
+      "id": 2993376,
+      "wikiDataId": "Q1727781",
+      "type": "ADM2",
+      "city": "Coblong",
+      "name": "Coblong",
+      "country": "Indonesia",
+      "countryCode": "ID",
+      "region": "West Java",
+      "regionCode": "JB",
+      "latitude": -6.8875,
+      "longitude": 107.616111111,
+      "population": 133100,
+      "distance": 0.51
+    },
+    {
+      "id": 3357037,
+      "wikiDataId": "Q25171051",
+      "type": "CITY",
+      "city": "Pasteur",
+      "name": "Pasteur",
+      "country": "Indonesia",
+      "countryCode": "ID",
+      "region": "West Java",
+      "regionCode": "JB",
+      "latitude": -6.889166666,
+      "longitude": 107.599444444,
+      "population": 0,
+      "distance": 0.78
+    }
+  ],
+  "links": [
+    {
+      "rel": "first",
+      "href": "/v1/geo/locations/-6.892208+107.610367/nearbyCities?offset=0&limit=5&radius=100"
+    },
+    {
+      "rel": "next",
+      "href": "/v1/geo/locations/-6.892208+107.610367/nearbyCities?offset=5&limit=5&radius=100"
+    },
+    {
+      "rel": "last",
+      "href": "/v1/geo/locations/-6.892208+107.610367/nearbyCities?offset=3690&limit=5&radius=100"
+    }
+  ],
+  "metadata": {
+    "currentOffset": 0,
+    "totalCount": 3692
+  }
+}
