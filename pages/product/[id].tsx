@@ -1,11 +1,11 @@
 import { useRouter } from 'next/router';
-import { getProductsId } from '../../services/productServices';
+import { getProductsId, getProducts } from '../../services/productServices';
 
 export default function ProductDetail(props: any) {
   const router = useRouter();
   const id = router.query.id;
   const { product } = props;
-  console.log(product);
+
   return (
     <>
       {!product ? (
@@ -37,12 +37,16 @@ export async function getStaticProps(context: any) {
 }
 
 export async function getStaticPaths() {
+  const data = await getProducts();
+  if (!data) {
+    return { notFound: true };
+  }
+  const ids = data
+    .slice(0, 5)
+    .map((product) => ({ params: { id: `${product.id}` } }));
+
   return {
-    paths: [
-      { params: { id: '1' } },
-      { params: { id: '2' } },
-      { params: { id: '3' } }
-    ],
+    paths: ids,
     fallback: true
   };
 }

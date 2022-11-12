@@ -24,9 +24,8 @@ export async function getStaticProps() {
   console.log('Regenerating...');
   const products = await getProducts();
   // const products = [];
-  console.log(products.length);
 
-  if (products.length === 0 || !products) {
+  if (!products) {
     return { notFound: true };
   }
 

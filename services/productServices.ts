@@ -20,18 +20,18 @@ async function getProducts() {
         }
       }
     );
-    // console.log(JSON.stringify(data, null, 4));
-    console.log('response status is: ', status);
     const products = data.products;
 
     return products;
   } catch (error) {
     if (axios.isAxiosError(error)) {
       console.log('error message: ', error.message);
-      return error.message;
+      //   return error.message;
+      return;
     } else {
       console.log('unexpected error: ', error);
-      return 'An unexpected error occurred';
+      //   return 'An unexpected error occurred';
+      return;
     }
   }
 }
@@ -46,17 +46,15 @@ async function getProductsId(id: any) {
         }
       }
     );
-    // console.log(JSON.stringify(data, null, 4));
-    console.log('response status is: ', status);
 
     return data;
   } catch (error) {
     if (axios.isAxiosError(error)) {
       console.log('error message: ', error.message);
-      return error.message;
+      return;
     } else {
       console.log('unexpected error: ', error);
-      return 'An unexpected error occurred';
+      return;
     }
   }
 }
