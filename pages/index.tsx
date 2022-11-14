@@ -6,7 +6,7 @@ export default function Home() {
   const router = useRouter();
 
   function loadWeatherApp() {
-    router.push('weather');
+    router.push('product');
   }
 
   return (
@@ -14,10 +14,10 @@ export default function Home() {
       <h1>Hello World!</h1>
       <ul>
         <li>
-          <Link href="weather">Weather</Link>
+          <Link href="product">Product</Link>
         </li>
       </ul>
-      <button onClick={loadWeatherApp}>Weather</button>
+      <button onClick={loadWeatherApp}>Product</button>
     </div>
   );
 }
